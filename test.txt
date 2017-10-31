@@ -1,1 +1,3 @@
-This is a test for updating the puppet_forge gem to 2.26
+This is a test for updating the puppet_forge gem to 2.2.6
+
+This is a test for uninstalling the puppet_forge gem version 2.2.2
