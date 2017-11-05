@@ -1,8 +1,7 @@
-class profile::base (
-  Array $packages
-  ){
+class profile::base ( $packages ){
 
   #the base profile should include component modules that will be on all nodes
-  include $packages,
-
+  package { $packages:
+    ensure => present,
+  }
 }
