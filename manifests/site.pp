@@ -31,3 +31,26 @@ node default {
   #   class { 'my_class': }
   include profile::base
 }
+
+node lb.puppet.vlan {
+  include ::haproxy
+  haproxy::listen { 'puppet00':
+    collect_exported => false,
+    ipaddress        => $::ipaddress,
+    ports            => '8140',
+  }
+  haproxy::balancermember { 'cm1':
+    listening_service => 'puppet00',
+    server_names      => 'cm1.puppet.vlan',
+    ipaddresses       => '192.168.0.137',
+    ports             => '8140',
+    options           => 'check',
+  }
+  haproxy::balancermember { 'cm2':
+    listening_service => 'puppet00',
+    server_names      => 'cm2.puppet.vlan',
+    ipaddresses       => '192.168.0.139',
+    ports             => '8140',
+    options           => 'check',
+  }
+}
