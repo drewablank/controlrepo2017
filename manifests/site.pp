@@ -34,7 +34,7 @@ node default {
 
 node lb.puppet.vlan {
   include ::haproxy
-  haproxy::listen { 'puppet00':
+  haproxy::listen { 'puppet':
     collect_exported => false,
     ipaddress        => $::ipaddress,
     ports            => '8140',
