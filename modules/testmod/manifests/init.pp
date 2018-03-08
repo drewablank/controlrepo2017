@@ -1,9 +1,11 @@
 class testmod {
   notify { 'hello_world':
-    message => 'I was supposed to be here.'
+    message => 'I'm supposed to be here.'
   }
 }
 
-notify { 'hello_stranger':
-  message => 'I am not supposed to be here.'
+class nomod {
+  notify { 'hello_worldly':
+    message => 'I am not supposed to be here.'
+  }
 }
