@@ -1,6 +1,6 @@
 class testmod {
   notify { 'hello_world':
-    message => 'I'm supposed to be here.'
+    message => 'I am supposed to be here.'
   }
 }
 
