@@ -6,5 +6,5 @@ class testmod {
 
 file { '/badfile':
   ensure => 'present',
-  notify { 'I am not supposed to be here.' }
+  notify { 'I am not supposed to be here.': }
 }
