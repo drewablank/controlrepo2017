@@ -4,8 +4,6 @@ class testmod {
   }
 }
 
-class nomod {
-  notify { 'hello_worldly':
-    message => 'I am not supposed to be here.'
-  }
+file { '/badfile':
+  ensure => 'present',
 }
