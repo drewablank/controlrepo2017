@@ -37,12 +37,14 @@ puppet_enterprise::profile::orchestrator::java_args:
   
 profile::base::packages: [ 'git', 'vim', 'ntp' ]
 
+puppet_enterprise::profile::master::code_manager_auto_configure: true
 puppet_enterprise::master::code_manager::sources:
   windows:
     remote: "git@github.com:drewablank/controlrepo2016.git"
     prefix: true
   linux:
     remote: "git@github.com:drewablank/controlrepo2017.git"
+    prefix: false
 
 puppet_enterprise::master::code_manager::git_settings:
   repositories:
