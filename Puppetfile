@@ -9,6 +9,8 @@ mod 'vshn/gitlab', '1.15.2'
 mod 'puppetlabs/haproxy', '2.0.1'
 mod 'puppetlabs-puppet_metrics_collector', '5.0.1'
 
+mod 'puppetlabs-support_tasks', '1.0.4'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
