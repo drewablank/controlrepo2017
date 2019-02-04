@@ -23,3 +23,5 @@ mod 'puppetlabs-support_tasks', '1.0.4'
 
 mod 'test-ntp',
   :git    => 'git@gitlab:root/test-ntp.git'
+
+mod 'camptocamp-openssl', '1.10.0'
