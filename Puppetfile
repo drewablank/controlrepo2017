@@ -21,5 +21,5 @@ mod 'puppetlabs-support_tasks', '1.0.4'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-# mod 'test-ntp',
-#   :git    => 'git@gitlab:root/test-ntp.git'
+mod 'test-ntp',
+  :git    => 'git@gitlab:root/test-ntp.git'
