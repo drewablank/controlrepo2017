@@ -2,10 +2,10 @@ forge "http://forge.puppetlabs.com"
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-#mod "puppetlabs/inifile",     '1.5.0'
+# mod "puppetlabs/inifile",     '1.5.0'
 mod "puppetlabs/stdlib",      '4.24.0'
 mod "puppetlabs/concat",      '4.1.1'
-mod 'vshn/gitlab', '1.15.2'
+# mod 'vshn/gitlab', '1.15.2'
 mod 'puppetlabs/haproxy', '2.0.1'
 mod 'puppetlabs-puppet_metrics_collector', '5.0.1'
 
@@ -21,5 +21,5 @@ mod 'puppetlabs-support_tasks', '1.0.4'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mod 'test-ntp',
-  :git    => 'git@gitlab:root/test-ntp.git'
+# mod 'test-ntp',
+#   :git    => 'git@gitlab:root/test-ntp.git'
